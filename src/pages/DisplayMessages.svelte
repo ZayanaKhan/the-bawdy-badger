@@ -4,6 +4,7 @@
     import MessageDateTime from "../api-components/MessageDateTime.svelte";
     import MessageTranscript from "../api-components/MessageTranscript.svelte";
     import MessageAudio from "../api-components/MessageAudio.svelte";
+    import MessageHeraldry from "../api-components/MessageHeraldry.svelte";
 
     let messages = [];
 
@@ -35,7 +36,8 @@
             Time : <br />
             Transcript : <MessageTranscript messageHash={message.messageHash} />
             <br />
-            <MessageAudio messageHash={message.messageHash} />
+            <MessageAudio messageHash={message.messageHash} /> <br />
+            Heraldry: <MessageHeraldry messageHash={message.messageHash} />
         </ul>
         <hr />
     {/each}

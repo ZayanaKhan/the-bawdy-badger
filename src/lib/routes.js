@@ -44,3 +44,8 @@ export function GetMessageTimeServerHourRoute(messageHash) {
 export function GetMessageAudioFileWavRoute(messageHash) {
   return `${api}/message/${messageHash}/audio/file/wav`;
 }
+
+export function GetMessageHeraldryRoute(messageHash) {
+  return `${api}/message/${messageHash}/heraldry`;
+}
+
