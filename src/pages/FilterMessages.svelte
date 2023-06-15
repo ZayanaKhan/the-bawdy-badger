@@ -9,6 +9,7 @@
   import MessageAudio from "../api-components/MessageAudio.svelte";
   import MessageHeraldry from "../api-components/MessageHeraldry.svelte";
 
+  let messages = [];
 
   async function GetMessage() {
     const response = await fetch(GetAllMessageHashesRoute());
